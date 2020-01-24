@@ -1,0 +1,76 @@
+intents:
+  - greetings
+  - goodbye
+  - password_reset
+  - email
+  - production
+  - quality
+  - development
+  - others
+  - colour
+  - nativeplace
+  - bestfriend
+
+entities:
+  - mail
+  - name
+  - colour
+  - place
+
+actions:
+- utter_greetings
+- utter_goodbye
+- utter_password_reset
+- utter_email
+- utter_production
+- utter_bestfriend
+- utter_colour
+- utter_nativeplace
+- action_password
+
+templates:
+  utter_greetings:
+    - text: "Hello, How can I assist you?"   
+      buttons:
+      - title: "Password Reset" 
+        payload: "Password Reset"
+      - title: "User Information"
+        payload: "User Information"
+      - title: "Validity Ext"
+        payload: "Validity Ext"
+      - title: "Role Information"
+        payload: "Role Information"
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_password_reset:
+  - text: "May I ask you to validate your email ID?"
+
+  utter_colour:
+  - text: "Thank you for the information, password reset link will be sent to your mail."
+
+  utter_nativeplace:
+  - text: "Thank you for the information, password reset link will be sent to your mail."
+
+  utter_bestfriend:
+  - text: "Thank you for the information, password reset link will be sent to your mail."
+
+  utter_production:
+  - text: "what is your native place?"
+  - text: "who is your best friend?"
+  - text: "what is your favourite colour?"
+
+
+  utter_email:
+    - text: "please select system type"
+      buttons:
+      - title: "Production"
+        payload: "Production"
+      - title: "Quality"
+        payload: "Quality"
+      - title: "Development"
+        payload: "Development"
+      - title: "Others"
+        payload: "Others"
+
+  

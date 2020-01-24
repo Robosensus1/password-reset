@@ -1,0 +1,22 @@
+language: en
+
+pipeline:
+  - name: "SpacyNLP"
+  - name: "SpacyTokenizer"
+  - name: "SpacyFeaturizer"
+  - name: "SklearnIntentClassifier"
+  - name: "CRFEntityExtractor"
+  - name: "EntitySynonymMapper"
+
+policies:
+  - name: KerasPolicy
+    epochs: 200
+    max_history: 3
+  - name: MemoizationPolicy
+    max_history: 3   
+  - name: "FallbackPolicy"
+    nlu_threshold: 0.4
+    core_threshold: 0.3
+    fallback_action_name: "action_default_fallback"
+  - name: "FormPolicy"
+
