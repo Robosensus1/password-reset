@@ -50,11 +50,13 @@
 - Development information
 - I need development information
 
-## intent: others
-- others
-- Others
-- Others details
-- details of others
+## intent: sandbox
+- sandbox
+- Sandbox
+- Sandbox details
+- details of Sandbox
+
+
 
 ## intent: bestfriend
 - my best friend is [mounika](name)
@@ -85,9 +87,8 @@
 - [mumbai](place)
 - [chennai](place)
 - [noida](place)
-- native plae is [srinagar](place)
+- native place is [srinagar](place)
 - native place is [hyderabad](place)
-
 
 
 
