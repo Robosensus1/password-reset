@@ -11,6 +11,7 @@ intents:
   - nativeplace
   - bestfriend
 
+
 entities:
   - mail
   - name
@@ -22,11 +23,13 @@ actions:
 - utter_goodbye
 - utter_password_reset
 - utter_email
-- utter_production
 - utter_bestfriend
 - utter_colour
 - utter_nativeplace
-- action_password
+- utter_production_system
+- utter_questions
+
+
 
 templates:
   utter_greetings:
@@ -55,22 +58,31 @@ templates:
   utter_bestfriend:
   - text: "Thank you for the information, password reset link will be sent to your mail."
 
-  utter_production:
+  utter_questions:
   - text: "what is your native place?"
-  - text: "who is your best friend?"
-  - text: "what is your favourite colour?"
+  - text: "which is your favourite colour?"
+  - text: "who is your bestfriend?"
+
 
 
   utter_email:
-    - text: "please select system type"
+    - text: "Seems you have access in multiple systems. To be precise can you confirm the role of the system?"
       buttons:
-      - title: "Production"
-        payload: "Production"
-      - title: "Quality"
-        payload: "Quality"
       - title: "Development"
         payload: "Development"
-      - title: "Others"
-        payload: "Others"
+      - title: "Quality"
+        payload: "Quality"
+      - title: "Production"
+        payload: "Production"
+      - title: "Sandbox"
+        payload: "Sandbox"
+
+  utter_production_system:
+    - text: "Please select the system"
+      buttons:
+      - title: "TGDCLNT210"
+        payload: "TGDCLNT210"
+      - title: "GRECLNT900"
+        payload: "GRECLNT900"
 
   
