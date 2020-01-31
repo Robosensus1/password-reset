@@ -2,15 +2,6 @@
 * greetings
   - utter_greetings
 
-## greetings
-* greetings
-  - utter_greetings
-
-
-## greetings
-* greetings
-  - utter_greetings
-
 ## greetingsone
 * greetings
   - utter_greetings
